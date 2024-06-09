@@ -12,13 +12,12 @@ const solutionByBruteForce = (input: number): number => {
 
         }
     }
-    const result = getMiddleValue(value);
-    return result;
+    return getMiddleValue(value);
 
 }
 
 const lookAndSayByBruteForce = (input: string): string => {
-    let result = '';
+    let buffer: string[] = [];
     let count = 1;
 
     // 원래 문자열을 앞에서부터 확인하는데,
@@ -28,11 +27,11 @@ const lookAndSayByBruteForce = (input: string): string => {
         if (i !== input.length - 1 && input[i] === input[i + 1]) {
             count++;
         } else {
-            result += count.toString() + input[i]
+            buffer.push(count.toString() + input[i]);
             count = 1;
         }
     }
-    return result;
+    return buffer.join('');
 }
 
 const getMiddleValue = (input: string): number => {
