@@ -12,8 +12,8 @@ describe('Look And Say Sequence Test', () => {
             expect(resultM).toBe(expectM);
         });
     });
-    describe('if n=8', () => {
-        it('should m=21', () => {
+    describe('if N=8', () => {
+        it('should M=21', () => {
             // given
             const N = 8;
             const expectM = 21;
@@ -23,4 +23,16 @@ describe('Look And Say Sequence Test', () => {
             expect(resultM).toBe(expectM);
         });
     });
+    describe('if N=12', () => {
+        it('should M=11', () => {
+            // given
+            const N = 12;
+            const expectM = 11;
+            // when
+            const resultM = lookAndSaySequence(N);
+            // then
+            expect(resultM).toBe(expectM);
+        });
+    });
+
 });
