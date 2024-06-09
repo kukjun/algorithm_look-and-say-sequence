@@ -70,6 +70,25 @@ f(n) = (1 + r + r^2 + r^3 + r^4 ... + r^(n-2))
 ---
 # 실행하기
 
+nodejs + typescript 환경.
+패키지 매니저는 pnpm
+
+```bash
+# 의존성 다운로드
+pnpm i
+
+# test 통과여부 확인
+pnpm test
+
+# 개발 환경에서 확인
+pnpm dev
+
+# build 후 동작
+pnpm build
+pnpm start
+
+
+```
 
 
 
