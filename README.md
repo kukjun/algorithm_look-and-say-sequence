@@ -1,5 +1,34 @@
 # Algorithm - Look And Say Sequence
 
+# 실행하기
+
+nodejs + typescript 환경.
+패키지 매니저는 pnpm
+
+양의 정수 n이 주어질때  n번째 항(Ln)의 자릿수 중 가운데 두 자리 수(m)를 출력합니다.
+
+<br>
+<br>
+
+**결과 예시**
+
+![result_example.png](resource/result_example.png)
+
+```bash
+# 의존성 다운로드
+pnpm i
+
+# test 통과여부 확인
+pnpm test
+
+# 개발 환경에서 확인
+pnpm dev
+
+# build 후 동작
+pnpm build
+pnpm start
+```
+
 <br>
 <br>
 <br>
@@ -115,23 +144,12 @@ f(n) = (1 + r + r^2 + r^3 + r^4 ... + r^(n-2))
 <br>
 <br>
 
+## 소감
+
+문제를 풀면서, 이전 항만 사용하고, 반복되는 수열이나 내부의 규칙이 없어서 1항부터 순차적으로 계산하는게 최선이라는 생각이 들었다.
+
+오랜만에 알고리즘을 풀어보니까 재미있었다. :)
+
+
+
 ---
-# 실행하기
-
-nodejs + typescript 환경.
-패키지 매니저는 pnpm
-
-```bash
-# 의존성 다운로드
-pnpm i
-
-# test 통과여부 확인
-pnpm test
-
-# 개발 환경에서 확인
-pnpm dev
-
-# build 후 동작
-pnpm build
-pnpm start
-```
